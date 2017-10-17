@@ -1,0 +1,29 @@
+.slider {
+  max-height: 70vh;
+  .carousel {
+    max-height: 70vh;
+    .carousel-inner {
+      max-height: 70vh;
+
+      .carousel-item {
+        max-height: 70vh;
+        .carousel-caption {
+          display: flex !important;
+          justify-content: flex-end;
+          align-items: flex-start;
+          flex-direction: column;
+          bottom: 15%;
+          h3 {
+            text-transform: uppercase;
+            font-size: 3.2rem;
+            margin-bottom: 30px;
+          }
+          p {
+            font-family: "Roboto Light";
+            font-size: 2.2rem;
+          }
+        }
+      }
+    }
+  }
+}

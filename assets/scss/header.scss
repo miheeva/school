@@ -1,0 +1,81 @@
+body {
+  font-family: "Roboto Regular";
+  font-size: 16px;
+  header {
+    text-transform: uppercase;
+    background-color: $mainBlue;
+    height: 100px;
+    max-height: 100px;
+    .container {
+      display: flex;
+      .menuHeader {
+        width: 100vw;
+        @include flexVerticalCenter();
+        .navbar {
+          width: 100%;
+          .navbar-brand {
+            @include flexAllCenter();
+            color: $white;
+            font-family: "Roboto Thin";
+            font-size: 1.5rem;
+            p {
+              padding-left: 10px;
+              display: flex;
+              flex-direction: column;
+              margin-bottom: 0;
+              span {
+                &.gbou {
+                  margin-bottom: -10px;
+                }
+              }
+            }
+            img {
+
+            }
+          }
+          .menuHead {
+            justify-content: center;
+            ul {
+              li {
+                padding: 0 10px;
+                a {
+                  color: $white;
+                  font-size: 1.1rem;
+                }
+              }
+            }
+          }
+        }
+      }
+      .headerMenuBtn {
+        cursor: pointer;
+        @include flexAllCenter();
+        .menuButton {
+          @include flexAllCenter();
+          border: 1px solid $white;
+          border-radius: 3px;
+          flex-direction: row;
+          padding: 8px;
+          .buttonElements {
+            display: flex;
+            flex-direction: column;
+            span {
+              width: 28px;
+              height: 3px;
+              margin: 3px;
+              background-color: $white;
+
+            }
+          }
+          .buttonText {
+            color: $white;
+            font-size: 1.1rem;
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+
+
+  }
+}

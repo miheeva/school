@@ -1,0 +1,70 @@
+.uHeader {
+  padding: 20px;
+  height: 105px;
+
+  .uItemsContainer {
+    transition: all .3s;
+    @include flexAllCenter();
+    &:hover {
+      transform: translateY(-5px);
+    }
+    .uHeaderItem {
+      @include flexAllCenter();
+      .uHeaderLogo {
+          a {
+            img {
+              max-width: 65px;
+              height: auto;
+            }
+          }
+      }
+      .uHeaderText {
+        display: flex;
+        flex-direction: column;
+        padding-left: 15px;
+        transition: all .3s;
+        .uHeaderLink {
+          &:hover {
+            text-decoration: none;
+          }
+          &.head {
+            font-size: 1.1rem;
+            color: $mainBlue;
+            text-transform: uppercase;
+            padding-bottom: 5px;
+            font-family: "Roboto Medium";
+          }
+          &.text {
+            font-size: 0.8rem;
+            color: $accentBlue;
+            display: inline-flex;
+            line-height: 15px;
+            font-family: "Roboto Light";
+
+          }
+        }
+      }
+      &.first {
+
+      }
+      &.second {
+
+      }
+      &.third {
+
+      }
+      &.fourth {
+          .uHeaderText {
+            .uHeaderLink {
+              font-size: 1rem;
+              &.email {
+                padding-top: 5px;
+
+              }
+            }
+          }
+      }
+    }
+  }
+
+}
