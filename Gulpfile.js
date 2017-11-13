@@ -49,7 +49,7 @@ gulp.task('js:build', function() {
 
 });
 
-gulp.task('style:build', function() {
+gulp.task('meow', function() {
 
     gulp.src(path.src.style)
         .pipe(sourceMaps.init())

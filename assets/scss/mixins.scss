@@ -9,7 +9,28 @@
   justify-content: center;
 }
 
-@mixin flexVerticalCenter {
+@mixin flexVerticalCenter() {
   display: flex;
   align-items: center;
+}
+
+@mixin webkitPlaceholder($color, $fontSize, $fontFamily) {
+  &::-webkit-input-placeholder {
+    color: $color;
+    font-size: $fontSize;
+    font-family: $fontFamily;
+  }
+}
+
+@mixin mozPlaceholder($color, $fontSize, $fontFamily) {
+  &::-moz-placeholder {
+    color: $color;
+    font-size: $fontSize;
+    font-family: $fontFamily;
+  }
+  &:-moz-placeholder {
+    color: $color;
+    font-size: $fontSize;
+    font-family: $fontFamily;
+  }
 }

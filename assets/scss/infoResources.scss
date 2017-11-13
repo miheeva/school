@@ -1,0 +1,40 @@
+.infoResources {
+  padding-bottom: 30px;
+  h3 {
+    color: $black;
+    text-transform: uppercase;
+    font-size: 1.37rem;
+    font-family: "Roboto Medium";
+    padding: 10px 0 20px;
+
+  }
+  .infoRItems {
+    padding: 0;
+    ul {
+      list-style: none;
+      padding-left: 0;
+      li {
+        transition: all .3s;
+        padding: 2px 0;
+        &:hover {
+          margin-left: 5px;
+        }
+        a {
+          font-family: "Roboto Regular";
+          font-size: 1.1rem;
+          color: $black;
+          transition: all .3s;
+          line-height: 1;
+          &:hover {
+            color: $accentBlue;
+            text-decoration: none;
+            font-family: "Roboto Regular";
+            li {
+
+            }
+          }
+        }
+      }
+    }
+  }
+}

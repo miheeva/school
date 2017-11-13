@@ -1,0 +1,39 @@
+.pageHeader {
+  min-height: 200px;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  .overlay {
+    z-index: 1;
+    background-color: rgba(0, 34, 103, .4);
+  }
+  .pageImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/slide.jpg");
+    background-size: cover;
+    -webkit-filter: blur(4px);
+    -moz-filter: blur(4px);
+    -o-filter: blur(4px);
+    -ms-filter: blur(4px);
+    filter: blur(4px);
+  }
+
+  .pageInfo {
+    position: relative;
+    z-index: 2;
+    color: $white;
+    .pageHead {
+      font-family: "Roboto Light";
+      font-size: 2.2rem;
+      text-transform: uppercase;
+    }
+    .pageSubHead {
+      font-family: "Roboto Thin";
+      font-size: 1.1rem;
+    }
+  }
+}

@@ -1,10 +1,28 @@
 @import "../css/normalize.css";
 @import "../css/main.css";
 @import "../css/bootstrap.min.css";
-@import "vars";
+@import "../css/bootstrap-grid.min.css";
 @import "mixins";
+@import "vars";
+@import "icons";
 @import "header";
 @import "underHeader";
 @import "slider";
+@import "newsIndex";
+@import "infoBlock";
+@import "infoResources";
+@import "footer";
 @import "indexPage";
+@import "menu";
+@import "breascrumbs";
+@import "pageHeader";
+@import "secondPage";
+@import "sidebar";
+@import "widgets";
+@import "article";
+@import "oo";
+@import "news";
 
+/*adaptive*/
+
+@import "tablet";

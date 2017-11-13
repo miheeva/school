@@ -1,0 +1,22 @@
+.breadcrumbs {
+  margin-top: 4px;
+  background-color: $white;
+  .breadcrumb {
+    padding: 0.35rem 1rem;
+    background-color: $white;
+    height: 30px;
+    margin-bottom: 0;
+    .breadcrumb-item {
+      font-family: "Roboto Regular";
+      font-size: 0.7rem;
+      .homeIcon {
+        background-image: url("../img/home.png");
+        height: 13px;
+        width: 14px;
+        display: block;
+        background-size: contain;
+        margin-top: 1px;
+      }
+    }
+  }
+}

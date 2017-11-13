@@ -1,0 +1,46 @@
+.news {
+  a {
+    color: $black;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  .newsItem {
+    padding: 20px 15px;
+    .newsImg {
+      width: 100%;
+      height: 100%;
+      background-image: url("../img/slide.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    .newsInfo {
+      .newsData {
+        p {
+          margin-bottom: 10px;
+        }
+      }
+      .newsPrev {
+        .newsHeader {
+          font-size: 2.25rem;
+          color: $mainBlue;
+          font-family: "Roboto Light";
+          transition: all .3s;
+          text-transform: uppercase;
+          &:hover {
+            color: $accentBlue;
+          }
+        }
+        .newsDescription {
+          font-size: 1.125rem;
+          font-family: "Roboto Light";
+          line-height: 1.2;
+        }
+
+      }
+    }
+    
+  }
+  
+}
